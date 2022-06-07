@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="1352.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="deby_lsp.LogController">
+   <children>
+      <Pane prefHeight="788.0" prefWidth="356.0" style="-fx-background-color: #c5c5c5;">
+         <children>
+            <Button layoutX="17.0" layoutY="207.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="323.0" style="-fx-background-color: #243a4f; -fx-background-radius: 10px;" text="Manage User" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button layoutX="17.0" layoutY="686.0" mnemonicParsing="false" onAction="#logout" prefHeight="46.0" prefWidth="323.0" style="-fx-background-color: #8B0000; -fx-background-radius: 10px;" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Text layoutX="30.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grafika Cafe" textAlignment="CENTER" wrappingWidth="297.72412109375">
+               <font>
+                  <Font name="System Bold" size="41.0" />
+               </font>
+            </Text>
+            <Button layoutX="16.0" layoutY="279.0" mnemonicParsing="false" onAction="#logPage" prefHeight="55.0" prefWidth="323.0" style="-fx-background-color: #243a4f; -fx-background-radius: 10px;" text="Log Activitas" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TableView fx:id="tableLog" layoutX="370.0" layoutY="25.0" prefHeight="663.0" prefWidth="685.0">
+              <columns>
+                <TableColumn fx:id="col_nama" prefWidth="134.0" text="User" />
+                  <TableColumn fx:id="col_waktu" prefWidth="219.0" text="Waktu" />
+                  <TableColumn fx:id="col_activity" prefWidth="256.0" text="Aktivitas" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
